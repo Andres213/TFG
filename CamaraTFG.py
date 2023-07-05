@@ -3,7 +3,6 @@ import numpy as np
 from keras.models import load_model
 
 #################### CARGA DEL MODELO DE CLASIFICACIÓN DE LENGUA DE SIGNOS:
-# TO DO
 # Tocará cambiar el modelo por el modelo final que usemos
 # Cargamos el modelo de clasificación de lengua de signos
 model = load_model(filepath='Imagenes/Pruebas/prueba3Andres.h5', compile=False)
@@ -18,7 +17,7 @@ cap = cv2.VideoCapture(0)
 # Definimos la región de interest (ROI, por sus siglas en inglés)
 # Es la zona de la imagen donde queremos que el usuario sitúe la mano
 # La mano se posicionará en la parte derecha medio-superior de la imagen
-# NOTE
+
 # Puede ser necesario ajustar estos valores en función de la cámara utilizada 
 # y de la distancia y posición de la mano del usuario
 mano = input("Elige mano derecha o mano izquierda(D/I): ")
